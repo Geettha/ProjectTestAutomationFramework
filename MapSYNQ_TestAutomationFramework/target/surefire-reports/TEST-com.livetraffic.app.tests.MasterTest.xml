@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="128" failures="0" name="com.livetraffic.app.tests.MasterTest" time="0.34" errors="4" skipped="28">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files (x86)\Java\jre1.8.0_141\bin"/>
+    <property name="java.vm.version" value="25.141-b15"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) Client VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="D:\SDET-Project\MapSYNQ_TestAutomationFramework"/>
+    <property name="java.runtime.version" value="1.8.0_141-b15"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files (x86)\Java\jre1.8.0_141\lib\endorsed"/>
+    <property name="os.arch" value="x86"/>
+    <property name="java.io.tmpdir" value="C:\Users\ASUS\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="D:\SDET-Project\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf8824204240912192434.tmp"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files (x86)\Java\jre1.8.0_141\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files (x86)/Java/jre1.8.0_141/bin/client;C:/Program Files (x86)/Java/jre1.8.0_141/bin;C:/Program Files (x86)/Java/jre1.8.0_141/lib/i386;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Java\jdk1.8.0_05\bin;C:\Program Files\PuTTY\;C:\Program Files (x86)\Gradle\gradle-4.4-bin\gradle-4.4\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Git\cmd;C:\Program Files (x86)\GitExtensions\;C:\WINDOWS\System32\OpenSSH\;C:\apache-maven-3.6.1-bin\bin;C:\Program Files\Git\cmd;C:\sdk-tools\platform-tools;C:\sdk-tools\tools;C:\Users\ASUS\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\ASUS\AppData\Local\Programs\Python\Python37-32\;C:\Users\ASUS\AppData\Local\Microsoft\WindowsApps;C:\Users\ASUS\AppData\Roaming\npm;C:\Program Files\nodejs;;C:\Program Files\Microsoft VS Code\bin;C:\Users\ASUS\AppData\Local\Programs\devspaces;C:\tools;D:\eclipse-jee-luna-SR2-win32\eclipse;;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot Client Compiler"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\ASUS"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="ASUS"/>
+    <property name="java.class.path" value="/D:/eclipse-jee-luna-SR2-win32/eclipse/plugins/org.eclipse.m2e.maven.runtime_1.5.0.20140605-2032/jars/plexus-classworlds-2.5.1.jar"/>
+    <property name="org.slf4j.simpleLogger.defaultLogLevel" value="info"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="32"/>
+    <property name="java.home" value="C:\Program Files (x86)\Java\jre1.8.0_141"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="1.8.0_141"/>
+    <property name="java.ext.dirs" value="C:\Program Files (x86)\Java\jre1.8.0_141\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files (x86)\Java\jre1.8.0_141\lib\resources.jar;C:\Program Files (x86)\Java\jre1.8.0_141\lib\rt.jar;C:\Program Files (x86)\Java\jre1.8.0_141\lib\sunrsasign.jar;C:\Program Files (x86)\Java\jre1.8.0_141\lib\jsse.jar;C:\Program Files (x86)\Java\jre1.8.0_141\lib\jce.jar;C:\Program Files (x86)\Java\jre1.8.0_141\lib\charsets.jar;C:\Program Files (x86)\Java\jre1.8.0_141\lib\jfr.jar;C:\Program Files (x86)\Java\jre1.8.0_141\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="D:\SDET-Project\MapSYNQ_TestAutomationFramework\EMBEDDED"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
+  </properties>
+  <testcase classname="| Tim | Lan | Singapore | PA 123 | 89089011 | 27-08-2010 | giitanjalim@gmail.com | test1239 | test1239 |" name="Given user navigates to application URL : &quot;http://www.mapsynq.com&quot; application" time="0.016"/>
+  <testcase classname="| Tim | Lan | Singapore | PA 123 | 89089011 | 27-08-2010 | giitanjalim@gmail.com | test1239 | test1239 |" name="Then I am on mapSYNQ Landing Page" time="0"/>
+  <testcase classname="| Tim | Lan | Singapore | PA 123 | 89089011 | 27-08-2010 | giitanjalim@gmail.com | test1239 | test1239 |" name="When I click on &quot;Register&quot; link on Top Menu Bar" time="0"/>
+  <testcase classname="| Tim | Lan | Singapore | PA 123 | 89089011 | 27-08-2010 | giitanjalim@gmail.com | test1239 | test1239 |" name="Then I navigate to mapSYNQ User Profile page" time="0"/>
+  <testcase classname="| Tim | Lan | Singapore | PA 123 | 89089011 | 27-08-2010 | giitanjalim@gmail.com | test1239 | test1239 |" name="And I enter &quot;Tim&quot; in &quot;profile[first_name]&quot; Field textBox" time="0"/>
+  <testcase classname="| Tim | Lan | Singapore | PA 123 | 89089011 | 27-08-2010 | giitanjalim@gmail.com | test1239 | test1239 |" name="And I enter &quot;Lan&quot; in &quot;profile[last_name]&quot; Field textBox" time="0"/>
+  <testcase classname="| Tim | Lan | Singapore | PA 123 | 89089011 | 27-08-2010 | giitanjalim@gmail.com | test1239 | test1239 |" name="And I select &quot;Singapore&quot; from Country Field dropdown" time="0"/>
+  <testcase classname="| Tim | Lan | Singapore | PA 123 | 89089011 | 27-08-2010 | giitanjalim@gmail.com | test1239 | test1239 |" name="And I enter &quot;PA 123&quot; in &quot;profile[address]&quot; Field textBox" time="0"/>
+  <testcase classname="| Tim | Lan | Singapore | PA 123 | 89089011 | 27-08-2010 | giitanjalim@gmail.com | test1239 | test1239 |" name="And I enter &quot;89089011&quot; in &quot;profile[contact_no]&quot; Field textBox" time="0"/>
+  <testcase classname="| Tim | Lan | Singapore | PA 123 | 89089011 | 27-08-2010 | giitanjalim@gmail.com | test1239 | test1239 |" name="And I set value for Gender radiobutton" time="0"/>
+  <testcase classname="| Tim | Lan | Singapore | PA 123 | 89089011 | 27-08-2010 | giitanjalim@gmail.com | test1239 | test1239 |" name="And I set &quot;27-08-2010&quot; in DateOfBirth Field textBox" time="0"/>
+  <testcase classname="| Tim | Lan | Singapore | PA 123 | 89089011 | 27-08-2010 | giitanjalim@gmail.com | test1239 | test1239 |" name="And I enter &quot;giitanjalim@gmail.com&quot; in &quot;profile[email]&quot; Field textBox" time="0"/>
+  <testcase classname="| Tim | Lan | Singapore | PA 123 | 89089011 | 27-08-2010 | giitanjalim@gmail.com | test1239 | test1239 |" name="And I enter &quot;test1239&quot; in &quot;identity[password]&quot; Field textBox" time="0"/>
+  <testcase classname="| Tim | Lan | Singapore | PA 123 | 89089011 | 27-08-2010 | giitanjalim@gmail.com | test1239 | test1239 |" name="And I enter &quot;test1239&quot; in &quot;identity[password_confirmation]&quot; Field textBox" time="0"/>
+  <testcase classname="| Tim | Lan | Singapore | PA 123 | 89089011 | 27-08-2010 | giitanjalim@gmail.com | test1239 | test1239 |" name="And I set check value for I agree to terms and conditions checkbox" time="0"/>
+  <testcase classname="| Tim | Lan | Singapore | PA 123 | 89089011 | 27-08-2010 | giitanjalim@gmail.com | test1239 | test1239 |" name="And I click on Create button" time="0"/>
+  <testcase classname="| Tim | Lan | Singapore | PA 123 | 89089011 | 27-08-2010 | giitanjalim@gmail.com | test1239 | test1239 |" name="Then I verify new mapSYNQ account successfully created" time="0.02">
+    <error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;div_header&apos;]/div/div/a[contains(text(),&apos;Register&apos;)]&quot;}
+  (Session info: chrome=80.0.3987.122)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-FBHI1RA&apos;, ip: &apos;192.168.1.87&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_141&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\ASUS\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54686}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: dec602b7b4d312efcf7c5a84772ec916
+*** Element info: {Using=xpath, value=//*[@id=&apos;div_header&apos;]/div/div/a[contains(text(),&apos;Register&apos;)]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;div_header&apos;]/div/div/a[contains(text(),&apos;Register&apos;)]&quot;}
+  (Session info: chrome=80.0.3987.122)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-FBHI1RA&apos;, ip: &apos;192.168.1.87&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_141&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\ASUS\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54686}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: dec602b7b4d312efcf7c5a84772ec916
+*** Element info: {Using=xpath, value=//*[@id=&apos;div_header&apos;]/div/div/a[contains(text(),&apos;Register&apos;)]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy20.click(Unknown Source)
+	at com.livetraffic.app.page.functions.MapSYNQCreateNewAccountPageObject.newUserCreation(MapSYNQCreateNewAccountPageObject.java:140)
+	at com.livetraffic.app.stepdefinition.MapSYNQCreateNewAccountStep.iVerifyNewMapSYNQAccountSuccessfullyCreated(MapSYNQCreateNewAccountStep.java:67)
+	at ✽.Then I verify new mapSYNQ account successfully created(feature_files_list/mapSYNQCreateNewAccount.feature:23)
+</error>
+  </testcase>
+  <testcase classname="| Tim | Lan | Singapore | PA 123 | 89089011 | 27-08-2010 | giitanjalim@gmail.com | test1239 | test1239 |" name="| Tim | Lan | Singapore | PA 123 | 89089011 | 27-08-2010 | giitanjalim@gmail.com | test1239 | test1239 |" time="0.021">
+    <error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;div_header&apos;]/div/div/a[contains(text(),&apos;Register&apos;)]&quot;}
+  (Session info: chrome=80.0.3987.122)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-FBHI1RA&apos;, ip: &apos;192.168.1.87&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_141&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\ASUS\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54686}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: dec602b7b4d312efcf7c5a84772ec916
+*** Element info: {Using=xpath, value=//*[@id=&apos;div_header&apos;]/div/div/a[contains(text(),&apos;Register&apos;)]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;div_header&apos;]/div/div/a[contains(text(),&apos;Register&apos;)]&quot;}
+  (Session info: chrome=80.0.3987.122)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-FBHI1RA&apos;, ip: &apos;192.168.1.87&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_141&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\ASUS\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54686}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: dec602b7b4d312efcf7c5a84772ec916
+*** Element info: {Using=xpath, value=//*[@id=&apos;div_header&apos;]/div/div/a[contains(text(),&apos;Register&apos;)]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy20.click(Unknown Source)
+	at com.livetraffic.app.page.functions.MapSYNQCreateNewAccountPageObject.newUserCreation(MapSYNQCreateNewAccountPageObject.java:140)
+	at com.livetraffic.app.stepdefinition.MapSYNQCreateNewAccountStep.iVerifyNewMapSYNQAccountSuccessfullyCreated(MapSYNQCreateNewAccountStep.java:67)
+	at ✽.Then I verify new mapSYNQ account successfully created(feature_files_list/mapSYNQCreateNewAccount.feature:23)
+</error>
+  </testcase>
+  <testcase classname="| Tim | Lan | Singapore | PA 123 | 89089011 | 27-08-2010 | giitanjalim@gmail.com | test1239 | test1239 |" name="Then I close browser" time="0.022">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: Verification of General Components of Map feature [TS_VerifyMapFeature_GeneralComponents_1.0]" name="Given user navigates to application URL : &quot;http://www.mapsynq.com&quot; application" time="0"/>
+  <testcase classname="Scenario: Verification of General Components of Map feature [TS_VerifyMapFeature_GeneralComponents_1.0]" name="Then I am on mapSYNQ Landing Page" time="0"/>
+  <testcase classname="Scenario: Verification of General Components of Map feature [TS_VerifyMapFeature_GeneralComponents_1.0]" name="When I click on Ad Toggle icon" time="0"/>
+  <testcase classname="Scenario: Verification of General Components of Map feature [TS_VerifyMapFeature_GeneralComponents_1.0]" name="Then I verify Galactio Ad info should not be displayed" time="0"/>
+  <testcase classname="Scenario: Verification of General Components of Map feature [TS_VerifyMapFeature_GeneralComponents_1.0]" name="Then I verify Map should be loaded on page with Incidents selected Default" time="0"/>
+  <testcase classname="Scenario: Verification of General Components of Map feature [TS_VerifyMapFeature_GeneralComponents_1.0]" name="Then I verify Direction icon on Map" time="0"/>
+  <testcase classname="Scenario: Verification of General Components of Map feature [TS_VerifyMapFeature_GeneralComponents_1.0]" name="When I click on &quot;North&quot; Icon" time="0"/>
+  <testcase classname="Scenario: Verification of General Components of Map feature [TS_VerifyMapFeature_GeneralComponents_1.0]" name="Then I verify maps should move according to direction" time="0"/>
+  <testcase classname="Scenario: Verification of General Components of Map feature [TS_VerifyMapFeature_GeneralComponents_1.0]" name="When I click on &quot;South&quot; Icon" time="0"/>
+  <testcase classname="Scenario: Verification of General Components of Map feature [TS_VerifyMapFeature_GeneralComponents_1.0]" name="Then I verify maps should move according to direction" time="0"/>
+  <testcase classname="Scenario: Verification of General Components of Map feature [TS_VerifyMapFeature_GeneralComponents_1.0]" name="When I click on &quot;East&quot; Icon" time="0"/>
+  <testcase classname="Scenario: Verification of General Components of Map feature [TS_VerifyMapFeature_GeneralComponents_1.0]" name="Then I verify maps should move according to direction" time="0"/>
+  <testcase classname="Scenario: Verification of General Components of Map feature [TS_VerifyMapFeature_GeneralComponents_1.0]" name="When I click on &quot;West&quot; Icon" time="0"/>
+  <testcase classname="Scenario: Verification of General Components of Map feature [TS_VerifyMapFeature_GeneralComponents_1.0]" name="Then I verify maps should move according to direction" time="0"/>
+  <testcase classname="Scenario: Verification of General Components of Map feature [TS_VerifyMapFeature_GeneralComponents_1.0]" name="Then I verify Zoom Bar icon on Map" time="0"/>
+  <testcase classname="Scenario: Verification of General Components of Map feature [TS_VerifyMapFeature_GeneralComponents_1.0]" name="When I click on &quot;Plus&quot; Icon" time="0"/>
+  <testcase classname="Scenario: Verification of General Components of Map feature [TS_VerifyMapFeature_GeneralComponents_1.0]" name="When I click on &quot;Minus&quot; Icon" time="0"/>
+  <testcase classname="Scenario: Verification of General Components of Map feature [TS_VerifyMapFeature_GeneralComponents_1.0]" name="Then I verify Drag icon on Zoom Bar" time="0"/>
+  <testcase classname="Scenario: Verification of General Components of Map feature [TS_VerifyMapFeature_GeneralComponents_1.0]" name="When I click on &quot;Legend&quot; Icon" time="0"/>
+  <testcase classname="Scenario: Verification of General Components of Map feature [TS_VerifyMapFeature_GeneralComponents_1.0]" name="Then I verify Legend Poup up should be displayed" time="0"/>
+  <testcase classname="Scenario: Verification of General Components of Map feature [TS_VerifyMapFeature_GeneralComponents_1.0]" name="When I click on &quot;Calendar&quot; Icon" time="0"/>
+  <testcase classname="Scenario: Verification of General Components of Map feature [TS_VerifyMapFeature_GeneralComponents_1.0]" name="Then I verify Calendar Poup up should be displayed" time="0"/>
+  <testcase classname="Scenario: Verification of General Components of Map feature [TS_VerifyMapFeature_GeneralComponents_1.0]" name="When I click on SP Toggle icon" time="0"/>
+  <testcase classname="Scenario: Verification of General Components of Map feature [TS_VerifyMapFeature_GeneralComponents_1.0]" name="Then I verify Left Navigation Panel should not be displayed" time="0"/>
+  <testcase classname="Scenario: Verification of General Components of Map feature [TS_VerifyMapFeature_GeneralComponents_1.0]" name="Then I close browser" time="0"/>
+  <testcase classname="Scenario: Verification of General Components of Map feature [TS_VerifyMapFeature_GeneralComponents_1.0]" name="Scenario: Verification of General Components of Map feature [TS_VerifyMapFeature_GeneralComponents_1.0]" time="0.002"/>
+  <testcase classname="Scenario: Verification of Incidents Map feature between Incidents Info Panel and Map[TS_VerifyMapFeature_ContentsMatching_1.1]" name="Given user navigates to application URL : &quot;http://www.mapsynq.com&quot; application" time="0"/>
+  <testcase classname="Scenario: Verification of Incidents Map feature between Incidents Info Panel and Map[TS_VerifyMapFeature_ContentsMatching_1.1]" name="Given I am on mapSYNQ Landing Page" time="0"/>
+  <testcase classname="Scenario: Verification of Incidents Map feature between Incidents Info Panel and Map[TS_VerifyMapFeature_ContentsMatching_1.1]" name="When I click on Ad Toggle icon" time="0"/>
+  <testcase classname="Scenario: Verification of Incidents Map feature between Incidents Info Panel and Map[TS_VerifyMapFeature_ContentsMatching_1.1]" name="Then I verify Galactio Ad info should not be displayed" time="0"/>
+  <testcase classname="Scenario: Verification of Incidents Map feature between Incidents Info Panel and Map[TS_VerifyMapFeature_ContentsMatching_1.1]" name="Then I verify Map should be loaded on page with Incidents selected Default" time="0"/>
+  <testcase classname="Scenario: Verification of Incidents Map feature between Incidents Info Panel and Map[TS_VerifyMapFeature_ContentsMatching_1.1]" name="Then I verify News Menu Panel should be displayed" time="0"/>
+  <testcase classname="Scenario: Verification of Incidents Map feature between Incidents Info Panel and Map[TS_VerifyMapFeature_ContentsMatching_1.1]" name="When I click on &quot;Incidents&quot; item on Info Panel" time="0"/>
+  <testcase classname="Scenario: Verification of Incidents Map feature between Incidents Info Panel and Map[TS_VerifyMapFeature_ContentsMatching_1.1]" name="Then I verify Content Pop up should be displayed on Map" time="0"/>
+  <testcase classname="Scenario: Verification of Incidents Map feature between Incidents Info Panel and Map[TS_VerifyMapFeature_ContentsMatching_1.1]" name="Then I verify contents in Info Panel and Content Pop up for &quot;Incidents0&quot; matches" time="0"/>
+  <testcase classname="Scenario: Verification of Incidents Map feature between Incidents Info Panel and Map[TS_VerifyMapFeature_ContentsMatching_1.1]" name="When I click on &quot;Accident&quot; item on Info Panel" time="0"/>
+  <testcase classname="Scenario: Verification of Incidents Map feature between Incidents Info Panel and Map[TS_VerifyMapFeature_ContentsMatching_1.1]" name="Then I verify Content Pop up should be displayed on Map" time="0"/>
+  <testcase classname="Scenario: Verification of Incidents Map feature between Incidents Info Panel and Map[TS_VerifyMapFeature_ContentsMatching_1.1]" name="Then I verify contents in Info Panel and Content Pop up for &quot;Incidents1&quot; matches" time="0"/>
+  <testcase classname="Scenario: Verification of Incidents Map feature between Incidents Info Panel and Map[TS_VerifyMapFeature_ContentsMatching_1.1]" name="When I click on &quot;HeavyTraffic&quot; item on Info Panel" time="0"/>
+  <testcase classname="Scenario: Verification of Incidents Map feature between Incidents Info Panel and Map[TS_VerifyMapFeature_ContentsMatching_1.1]" name="Then I verify Content Pop up should be displayed on Map" time="0"/>
+  <testcase classname="Scenario: Verification of Incidents Map feature between Incidents Info Panel and Map[TS_VerifyMapFeature_ContentsMatching_1.1]" name="Then I verify contents in Info Panel and Content Pop up for &quot;Incidents3&quot; matches" time="0"/>
+  <testcase classname="Scenario: Verification of Incidents Map feature between Incidents Info Panel and Map[TS_VerifyMapFeature_ContentsMatching_1.1]" name="Then I close browser" time="0"/>
+  <testcase classname="Scenario: Verification of Incidents Map feature between Incidents Info Panel and Map[TS_VerifyMapFeature_ContentsMatching_1.1]" name="Scenario: Verification of Incidents Map feature between Incidents Info Panel and Map[TS_VerifyMapFeature_ContentsMatching_1.1]" time="0.001"/>
+  <testcase classname="Scenario: Verification of Search Incident Location Info Panel [TS_VerifyMapFeature_SeacrhIncidentInfo_1.2]" name="Given user navigates to application URL : &quot;http://www.mapsynq.com&quot; application" time="0"/>
+  <testcase classname="Scenario: Verification of Search Incident Location Info Panel [TS_VerifyMapFeature_SeacrhIncidentInfo_1.2]" name="Given I am on mapSYNQ Landing Page" time="0"/>
+  <testcase classname="Scenario: Verification of Search Incident Location Info Panel [TS_VerifyMapFeature_SeacrhIncidentInfo_1.2]" name="When I click on Ad Toggle icon" time="0"/>
+  <testcase classname="Scenario: Verification of Search Incident Location Info Panel [TS_VerifyMapFeature_SeacrhIncidentInfo_1.2]" name="Then I verify Galactio Ad info should not be displayed" time="0"/>
+  <testcase classname="Scenario: Verification of Search Incident Location Info Panel [TS_VerifyMapFeature_SeacrhIncidentInfo_1.2]" name="Then I verify Map should be loaded on page with Incidents selected Default" time="0"/>
+  <testcase classname="Scenario: Verification of Search Incident Location Info Panel [TS_VerifyMapFeature_SeacrhIncidentInfo_1.2]" name="Then I verify News Menu Panel should be displayed" time="0"/>
+  <testcase classname="Scenario: Verification of Search Incident Location Info Panel [TS_VerifyMapFeature_SeacrhIncidentInfo_1.2]" name="When I enter &quot;Accident&quot; in Search text box" time="0"/>
+  <testcase classname="Scenario: Verification of Search Incident Location Info Panel [TS_VerifyMapFeature_SeacrhIncidentInfo_1.2]" name="Then I verify searched items displayed on News Info Panel" time="0"/>
+  <testcase classname="Scenario: Verification of Search Incident Location Info Panel [TS_VerifyMapFeature_SeacrhIncidentInfo_1.2]" name="When I click on &quot;Accident&quot; item on Info Panel" time="0"/>
+  <testcase classname="Scenario: Verification of Search Incident Location Info Panel [TS_VerifyMapFeature_SeacrhIncidentInfo_1.2]" name="Then I verify Content Pop up should be displayed on Map" time="0"/>
+  <testcase classname="Scenario: Verification of Search Incident Location Info Panel [TS_VerifyMapFeature_SeacrhIncidentInfo_1.2]" name="Then I close browser" time="0"/>
+  <testcase classname="Scenario: Verification of Search Incident Location Info Panel [TS_VerifyMapFeature_SeacrhIncidentInfo_1.2]" name="Scenario: Verification of Search Incident Location Info Panel [TS_VerifyMapFeature_SeacrhIncidentInfo_1.2]" time="0.001"/>
+  <testcase classname="Scenario: Verification of Incident icons in Map [TS_VerifyMapFeature_IncidentIcons_1.2]" name="Given user navigates to application URL : &quot;http://www.mapsynq.com&quot; application" time="0"/>
+  <testcase classname="Scenario: Verification of Incident icons in Map [TS_VerifyMapFeature_IncidentIcons_1.2]" name="Given I am on mapSYNQ Landing Page" time="0"/>
+  <testcase classname="Scenario: Verification of Incident icons in Map [TS_VerifyMapFeature_IncidentIcons_1.2]" name="When I click on Ad Toggle icon" time="0"/>
+  <testcase classname="Scenario: Verification of Incident icons in Map [TS_VerifyMapFeature_IncidentIcons_1.2]" name="Then I verify Galactio Ad info should not be displayed" time="0"/>
+  <testcase classname="Scenario: Verification of Incident icons in Map [TS_VerifyMapFeature_IncidentIcons_1.2]" name="Then I verify Map should be loaded on page with Incidents selected Default" time="0"/>
+  <testcase classname="Scenario: Verification of Incident icons in Map [TS_VerifyMapFeature_IncidentIcons_1.2]" name="Then I click on &quot;Incident&quot; icon image on Map app" time="0"/>
+  <testcase classname="Scenario: Verification of Incident icons in Map [TS_VerifyMapFeature_IncidentIcons_1.2]" name="Then I verify Incident details Pop up should be displayed" time="0.002"/>
+  <testcase classname="Scenario: Verification of Incident icons in Map [TS_VerifyMapFeature_IncidentIcons_1.2]" name="When I click on &quot;IncidentsLink&quot; link on Incident details Pop up" time="0"/>
+  <testcase classname="Scenario: Verification of Incident icons in Map [TS_VerifyMapFeature_IncidentIcons_1.2]" name="Then I verify Incident details Content Pop up should be displayed" time="0"/>
+  <testcase classname="Scenario: Verification of Incident icons in Map [TS_VerifyMapFeature_IncidentIcons_1.2]" name="Then I click on &quot;Incident&quot; icon image on Map app" time="0"/>
+  <testcase classname="Scenario: Verification of Incident icons in Map [TS_VerifyMapFeature_IncidentIcons_1.2]" name="When I click on &quot;Zoomin&quot; link on Incident details Pop up" time="0"/>
+  <testcase classname="Scenario: Verification of Incident icons in Map [TS_VerifyMapFeature_IncidentIcons_1.2]" name="Then I verify map should be zoomed with Incident Details Content Pop up" time="0"/>
+  <testcase classname="Scenario: Verification of Incident icons in Map [TS_VerifyMapFeature_IncidentIcons_1.2]" name="Then I close browser" time="0"/>
+  <testcase classname="Scenario: Verification of Incident icons in Map [TS_VerifyMapFeature_IncidentIcons_1.2]" name="Scenario: Verification of Incident icons in Map [TS_VerifyMapFeature_IncidentIcons_1.2]" time="0.001"/>
+  <testcase classname="Scenario: Verification of Traffic Parking Map Feature[TS_VerifyMapFeature_TrafficParkingMap_1.1]" name="Given user navigates to application URL : &quot;http://www.mapsynq.com&quot; application" time="0"/>
+  <testcase classname="Scenario: Verification of Traffic Parking Map Feature[TS_VerifyMapFeature_TrafficParkingMap_1.1]" name="Given I am on mapSYNQ Landing Page" time="0"/>
+  <testcase classname="Scenario: Verification of Traffic Parking Map Feature[TS_VerifyMapFeature_TrafficParkingMap_1.1]" name="When I click on Ad Toggle icon" time="0"/>
+  <testcase classname="Scenario: Verification of Traffic Parking Map Feature[TS_VerifyMapFeature_TrafficParkingMap_1.1]" name="Then I verify Galactio Ad info should not be displayed" time="0"/>
+  <testcase classname="Scenario: Verification of Traffic Parking Map Feature[TS_VerifyMapFeature_TrafficParkingMap_1.1]" name="Then I verify Map should be loaded on page with Incidents selected Default" time="0"/>
+  <testcase classname="Scenario: Verification of Traffic Parking Map Feature[TS_VerifyMapFeature_TrafficParkingMap_1.1]" name="Then I click on &quot;Incidents&quot; icon button on Map app" time="0"/>
+  <testcase classname="Scenario: Verification of Traffic Parking Map Feature[TS_VerifyMapFeature_TrafficParkingMap_1.1]" name="Then I click on the &quot;Parking&quot; icon button on Map app" time="0"/>
+  <testcase classname="Scenario: Verification of Traffic Parking Map Feature[TS_VerifyMapFeature_TrafficParkingMap_1.1]" name="Then I close browser" time="0.001"/>
+  <testcase classname="Scenario: Verification of Traffic Parking Map Feature[TS_VerifyMapFeature_TrafficParkingMap_1.1]" name="Scenario: Verification of Traffic Parking Map Feature[TS_VerifyMapFeature_TrafficParkingMap_1.1]" time="0.003"/>
+  <testcase classname="Scenario: Verification of Traffic Map feature [TS_VerifyMapFeature_Traffic_1.1]" name="Given user navigates to application URL : &quot;http://www.mapsynq.com&quot; application" time="0"/>
+  <testcase classname="Scenario: Verification of Traffic Map feature [TS_VerifyMapFeature_Traffic_1.1]" name="Given I am on mapSYNQ Landing Page" time="0"/>
+  <testcase classname="Scenario: Verification of Traffic Map feature [TS_VerifyMapFeature_Traffic_1.1]" name="When I click on Ad Toggle icon" time="0">
+    <error message="element click intercepted: Element &lt;div id=&quot;ad_toggle&quot; class=&quot;sprite ad_bar_toggle ad_bar_collapse&quot;&gt;&lt;/div&gt; is not clickable at point (1228, 167). Other element would receive the click: &lt;div id=&quot;galactio_ad&quot; class=&quot;sprite&quot; style=&quot;right: 0px;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=80.0.3987.122)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-FBHI1RA&apos;, ip: &apos;192.168.1.87&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_141&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\ASUS\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:55127}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c6eccf9c6e826e749c5f6eec0143b913" type="org.openqa.selenium.ElementClickInterceptedException">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div id=&quot;ad_toggle&quot; class=&quot;sprite ad_bar_toggle ad_bar_collapse&quot;&gt;&lt;/div&gt; is not clickable at point (1228, 167). Other element would receive the click: &lt;div id=&quot;galactio_ad&quot; class=&quot;sprite&quot; style=&quot;right: 0px;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=80.0.3987.122)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-FBHI1RA&apos;, ip: &apos;192.168.1.87&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_141&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\ASUS\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:55127}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c6eccf9c6e826e749c5f6eec0143b913
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at sun.reflect.GeneratedMethodAccessor18.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy20.click(Unknown Source)
+	at com.livetraffic.app.page.functions.MapSYNQVerifyGeneralComponentsOfTrafficMapPageObject.clickOnAdToggleButton(MapSYNQVerifyGeneralComponentsOfTrafficMapPageObject.java:75)
+	at com.livetraffic.app.stepdefinition.MapSYNQVerifyGeneralComponentsOfTrafficMapStep.i_click_on_Ad_Toggle_icon(MapSYNQVerifyGeneralComponentsOfTrafficMapStep.java:52)
+	at ✽.When I click on Ad Toggle icon(feature_files_list/mapSYNQVerifyTrafficSpeed.feature:9)
+</error>
+  </testcase>
+  <testcase classname="Scenario: Verification of Traffic Map feature [TS_VerifyMapFeature_Traffic_1.1]" name="Scenario: Verification of Traffic Map feature [TS_VerifyMapFeature_Traffic_1.1]" time="0">
+    <error message="element click intercepted: Element &lt;div id=&quot;ad_toggle&quot; class=&quot;sprite ad_bar_toggle ad_bar_collapse&quot;&gt;&lt;/div&gt; is not clickable at point (1228, 167). Other element would receive the click: &lt;div id=&quot;galactio_ad&quot; class=&quot;sprite&quot; style=&quot;right: 0px;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=80.0.3987.122)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-FBHI1RA&apos;, ip: &apos;192.168.1.87&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_141&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\ASUS\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:55127}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c6eccf9c6e826e749c5f6eec0143b913" type="org.openqa.selenium.ElementClickInterceptedException">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div id=&quot;ad_toggle&quot; class=&quot;sprite ad_bar_toggle ad_bar_collapse&quot;&gt;&lt;/div&gt; is not clickable at point (1228, 167). Other element would receive the click: &lt;div id=&quot;galactio_ad&quot; class=&quot;sprite&quot; style=&quot;right: 0px;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=80.0.3987.122)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-FBHI1RA&apos;, ip: &apos;192.168.1.87&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_141&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\ASUS\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:55127}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c6eccf9c6e826e749c5f6eec0143b913
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at sun.reflect.GeneratedMethodAccessor18.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy20.click(Unknown Source)
+	at com.livetraffic.app.page.functions.MapSYNQVerifyGeneralComponentsOfTrafficMapPageObject.clickOnAdToggleButton(MapSYNQVerifyGeneralComponentsOfTrafficMapPageObject.java:75)
+	at com.livetraffic.app.stepdefinition.MapSYNQVerifyGeneralComponentsOfTrafficMapStep.i_click_on_Ad_Toggle_icon(MapSYNQVerifyGeneralComponentsOfTrafficMapStep.java:52)
+	at ✽.When I click on Ad Toggle icon(feature_files_list/mapSYNQVerifyTrafficSpeed.feature:9)
+</error>
+  </testcase>
+  <testcase classname="Scenario: Verification of Traffic Map feature [TS_VerifyMapFeature_Traffic_1.1]" name="Then I verify Galactio Ad info should not be displayed" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: Verification of Traffic Map feature [TS_VerifyMapFeature_Traffic_1.1]" name="Then I verify Map should be loaded on page with Incidents selected Default" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: Verification of Traffic Map feature [TS_VerifyMapFeature_Traffic_1.1]" name="Then I click on &quot;Incidents&quot; icon button on Map app" time="0.01">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: Verification of Traffic Map feature [TS_VerifyMapFeature_Traffic_1.1]" name="Then I click on &quot;Directions&quot; icon button on Map app" time="0.01">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: Verification of Traffic Map feature [TS_VerifyMapFeature_Traffic_1.1]" name="Then I verify Info Panel should be displayed" time="0.01">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: Verification of Traffic Map feature [TS_VerifyMapFeature_Traffic_1.1]" name="When I click on &quot;Traffic&quot; icon button on Map app" time="0.01">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: Verification of Traffic Map feature [TS_VerifyMapFeature_Traffic_1.1]" name="Then I verify Live Traffic Panel should be displayed" time="0.01">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: Verification of Traffic Map feature [TS_VerifyMapFeature_Traffic_1.1]" name="When I right click on Map to select &quot;Set As Current Location&quot; from context Menu" time="0.01">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: Verification of Traffic Map feature [TS_VerifyMapFeature_Traffic_1.1]" name="Then I verify Icon for current location should be displayed" time="0.01">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: Verification of Traffic Map feature [TS_VerifyMapFeature_Traffic_1.1]" name="When I click on &quot;CurrentLocation&quot; icon button on Map app" time="0.01">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: Verification of Traffic Map feature [TS_VerifyMapFeature_Traffic_1.1]" name="Then I verify Current Location details Pop up should be displayed" time="0.01">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: Verification of Traffic Map feature [TS_VerifyMapFeature_Traffic_1.1]" name="When I click on &quot;FromHere&quot; link on Current Location details Pop up" time="0.01">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: Verification of Traffic Map feature [TS_VerifyMapFeature_Traffic_1.1]" name="Then I verify Current Location field on Directions Input screen populated" time="0.01">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: Verification of Traffic Map feature [TS_VerifyMapFeature_Traffic_1.1]" name="When I click on &quot;ToHere&quot; link on Current Location details Pop up" time="0.01">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: Verification of Traffic Map feature [TS_VerifyMapFeature_Traffic_1.1]" name="Then I verify To Location field on Directions Input screen populated" time="0.01">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: Verification of Traffic Map feature [TS_VerifyMapFeature_Traffic_1.1]" name="When I click on &quot;Zoomin&quot; link on Current Location details Pop up" time="0.01">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: Verification of Traffic Map feature [TS_VerifyMapFeature_Traffic_1.1]" name="When I click on &quot;StreetView&quot; link on Current Location details Pop up" time="0.01">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: Verification of Traffic Map feature [TS_VerifyMapFeature_Traffic_1.1]" name="Then I verify Street View should be displayed" time="0.01">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: Verification of Traffic Map feature [TS_VerifyMapFeature_Traffic_1.1]" name="When I click on &quot;Calendar&quot; link on Current Location details Pop up" time="0.01">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: Verification of Traffic Map feature [TS_VerifyMapFeature_Traffic_1.1]" name="Then I verify Pop up should be displayed on Directions Input screen" time="0.01">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: Verification of Traffic Map feature [TS_VerifyMapFeature_Traffic_1.1]" name="When I click on &quot;Places&quot; link on Current Location details Pop up" time="0.01">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: Verification of Traffic Map feature [TS_VerifyMapFeature_Traffic_1.1]" name="Then I verify Pop up should be displayed on Directions Input screen" time="0.01">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: Verification of Traffic Map feature [TS_VerifyMapFeature_Traffic_1.1]" name="When I click on &quot;Close&quot; link on Current Location details Pop up" time="0.01">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: Verification of Traffic Map feature [TS_VerifyMapFeature_Traffic_1.1]" name="Then I verify Current Location details Pop up should not be displayed" time="0.01">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: Verification of Traffic Map feature [TS_VerifyMapFeature_Traffic_1.1]" name="When I right click on Map to select &quot;Reset Current Location&quot; from context Menu" time="0.01">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: Verification of Traffic Map feature [TS_VerifyMapFeature_Traffic_1.1]" name="Then I verify Icon for current location should not be displayed" time="0.01">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: Verification of Traffic Map feature [TS_VerifyMapFeature_Traffic_1.1]" name="Then I close browser" time="0.01">
+    <skipped/>
+  </testcase>
+</testsuite>
