@@ -2,15 +2,10 @@ package com.livetraffic.app.stepdefinition;
 
 import com.livetraffic.app.lib.helper.ScumberException;
 import com.livetraffic.app.lib.WebDriverActions;
-import com.livetraffic.app.page.functions.MapSYNQCreateNewAccountPageObject;
-import com.livetraffic.app.page.functions.MapSYNQVerifyGeneralComponentsOfTrafficMapPageObject;
 import com.livetraffic.app.page.functions.MapSYNQVerifyTrafficIncidentsPageObject;
-import com.livetraffic.app.page.functions.MapSYNQVerifyTrafficSpeedPageObject;
 
 import cucumber.api.Scenario;
 import cucumber.api.java.Before;
-import cucumber.api.java.en.And;
-import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 

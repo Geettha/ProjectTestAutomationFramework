@@ -1,14 +1,11 @@
 package com.livetraffic.app.lib.utils;
 
-import java.util.logging.Logger;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 
 public abstract class AbstractBasePage extends WebElementHelperMethods
 {
-	private final static Logger Log = Logger.getLogger(AbstractBasePage.class.getName());
 
 	protected AbstractBasePage(final WebDriver driver)
 	{

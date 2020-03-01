@@ -7,21 +7,14 @@ import java.util.logging.Logger;
 import com.livetraffic.app.lib.helper.PropertiesLoader;
 import com.livetraffic.app.lib.utils.AbstractBasePage;
 import com.livetraffic.app.lib.Constants;
-import com.livetraffic.app.page.locators.MapSYNQCreateNewAccountLocators;
-import com.livetraffic.app.page.locators.MapSYNQVerifyGeneralComponentsOfTrafficMapLocators;
 import com.livetraffic.app.page.locators.MapSYNQVerifyTrafficIncidentsLocators;
-import com.livetraffic.app.page.locators.MapSYNQVerifyTrafficSpeedLocators;
-import com.livetraffic.app.stepdefinition.MapSYNQCreateNewAccountStep;
 import com.livetraffic.app.stepdefinition.MapSYNQVerifyTrafficIncidentsStep;
-import com.livetraffic.app.stepdefinition.MapSYNQVerifyTrafficSpeedStep;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -77,7 +70,7 @@ public class MapSYNQVerifyTrafficIncidentsPageObject extends AbstractBasePage {
 	
 	public void verifyItemsShownInNewsInfoSearch() {
 		List<WebElement> elements = itsDriver.findElements(By.xpath("//*[@id='search_incident_singapore']//li"));
-		for (WebElement ele : elements){
+		for (@SuppressWarnings("unused") WebElement ele : elements){
 			Assert.assertTrue(incidentLoc.mpIncidentsItemsShown.isDisplayed());
 		}
 	}

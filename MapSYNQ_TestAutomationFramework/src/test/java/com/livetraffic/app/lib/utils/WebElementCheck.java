@@ -2,7 +2,6 @@ package com.livetraffic.app.lib.utils;
 
 import java.util.HashSet;
 import java.util.List;
-import java.util.logging.Logger;
 
 import org.junit.Assert;
 import org.openqa.selenium.JavascriptExecutor;
@@ -14,7 +13,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class WebElementCheck extends WebElementWait
 {
-	private final static Logger Log = Logger.getLogger(WebElementCheck.class.getName());
 
 	public WebElementCheck(final WebDriver driver)
 	{

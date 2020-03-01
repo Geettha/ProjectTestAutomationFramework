@@ -26,7 +26,6 @@ import com.livetraffic.app.lib.Constants;
 public abstract class WebElementHelperMethods extends WebElementCheck {
 	private final static Logger Log = Logger.getLogger(WebElementHelperMethods.class.getName());
 	private final Actions action = new Actions(itsDriver);
-	private WebDriver driver;
 
 	protected WebElementHelperMethods(final WebDriver driver) {
 		super(driver);

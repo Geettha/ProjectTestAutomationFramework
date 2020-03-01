@@ -2,8 +2,6 @@ package com.livetraffic.app.stepdefinition;
 
 import java.net.MalformedURLException;
 import java.util.logging.Logger;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;

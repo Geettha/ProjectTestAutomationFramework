@@ -1,29 +1,13 @@
 package com.livetraffic.app.page.functions;
 
-import java.util.List;
-import java.util.Properties;
-import java.util.logging.Logger;
-
-import com.livetraffic.app.lib.helper.PropertiesLoader;
 import com.livetraffic.app.lib.utils.AbstractBasePage;
 import com.livetraffic.app.lib.Constants;
-import com.livetraffic.app.page.locators.MapSYNQCreateNewAccountLocators;
-import com.livetraffic.app.page.locators.MapSYNQVerifyGeneralComponentsOfTrafficMapLocators;
-import com.livetraffic.app.page.locators.MapSYNQVerifyTrafficIncidentsLocators;
 import com.livetraffic.app.page.locators.MapSYNQVerifyTrafficParkingLocators;
-import com.livetraffic.app.page.locators.MapSYNQVerifyTrafficSpeedLocators;
-import com.livetraffic.app.stepdefinition.MapSYNQCreateNewAccountStep;
-import com.livetraffic.app.stepdefinition.MapSYNQVerifyTrafficIncidentsStep;
-import com.livetraffic.app.stepdefinition.MapSYNQVerifyTrafficParkingStep;
-import com.livetraffic.app.stepdefinition.MapSYNQVerifyTrafficSpeedStep;
+
 
 import org.junit.Assert;
-import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -41,7 +25,6 @@ public class MapSYNQVerifyTrafficParkingPageObject extends AbstractBasePage {
 	final MapSYNQVerifyTrafficParkingLocators parkingLoc;
 	WebDriverWait wait;
 	JavascriptExecutor jsExecutor;
-	private final static Logger Log = Logger.getLogger(MapSYNQVerifyTrafficParkingStep.class.getName());
 	private static final String INCIDENTS = "Incidents";
 	private static final String ZOOM_IN = "Zoomin";
 	private static final String PARKINGICON = "ParkingIcon";
@@ -57,12 +40,8 @@ public class MapSYNQVerifyTrafficParkingPageObject extends AbstractBasePage {
 
 	}
 
-	public Properties testProps() {
-		return PropertiesLoader.getInstance().load("userdetails.properties");
-	}
-	
 	public void verifyParkingSlotsIconDisplayed() throws Exception {
-		// wait.until(ExpectedConditions.(parkingLoc.mpParkingSlotsIconLoadedOnMap));
+		// wait.until(ExpectedConditions.visibilityOf(parkingLoc.mpParkingSlotsIconLoadedOnMap));
 		pause(20000);
 		Assert.assertTrue(parkingLoc.mpParkingSlotsIconLoadedOnMap.isEnabled());
 	}

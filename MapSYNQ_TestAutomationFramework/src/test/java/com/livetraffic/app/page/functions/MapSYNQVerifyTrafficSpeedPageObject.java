@@ -1,23 +1,13 @@
 package com.livetraffic.app.page.functions;
 
-import java.util.Properties;
-import java.util.logging.Logger;
-
-import com.livetraffic.app.lib.helper.PropertiesLoader;
 import com.livetraffic.app.lib.utils.AbstractBasePage;
 import com.livetraffic.app.lib.Constants;
-import com.livetraffic.app.page.locators.MapSYNQCreateNewAccountLocators;
-import com.livetraffic.app.page.locators.MapSYNQVerifyGeneralComponentsOfTrafficMapLocators;
 import com.livetraffic.app.page.locators.MapSYNQVerifyTrafficSpeedLocators;
-import com.livetraffic.app.stepdefinition.MapSYNQCreateNewAccountStep;
-import com.livetraffic.app.stepdefinition.MapSYNQVerifyTrafficSpeedStep;
 
 import org.junit.Assert;
-import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -36,7 +26,6 @@ public class MapSYNQVerifyTrafficSpeedPageObject extends AbstractBasePage {
 	final MapSYNQVerifyTrafficSpeedLocators speedLoc;
 	WebDriverWait wait;
 	JavascriptExecutor jsExecutor;
-	private final static Logger Log = Logger.getLogger(MapSYNQVerifyTrafficSpeedStep.class.getName());
 	private static final String INCIDENTS = "Incidents";
 	private static final String DIRECTIONS = "Directions";
 	private static final String TRAFFIC = "Traffic";
@@ -48,7 +37,6 @@ public class MapSYNQVerifyTrafficSpeedPageObject extends AbstractBasePage {
 	private static final String CALENDAR = "Calendar";
 	private static final String PLACES = "Places";
 	private static final String CLOSE = "Close";
-	private static final String PARKING = "Parking";
 
 	@Autowired
 	public MapSYNQVerifyTrafficSpeedPageObject(final WebDriver driver) {
@@ -59,11 +47,6 @@ public class MapSYNQVerifyTrafficSpeedPageObject extends AbstractBasePage {
 
 	}
 
-	public Properties testProps() {
-		return PropertiesLoader.getInstance().load("userdetails.properties");
-	}
-
-	
 	public void performRightClickSetCurrentLoc() {
 		Actions action= new Actions(itsDriver);
 		action.moveToElement(speedLoc.mpTrafficSpeedPanel).contextClick(speedLoc.mpTrafficSpeedPanel).build().perform();

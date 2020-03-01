@@ -1,21 +1,15 @@
 package com.livetraffic.app.page.functions;
 
-import java.util.Properties;
 import java.util.logging.Logger;
 
-import com.livetraffic.app.lib.helper.PropertiesLoader;
 import com.livetraffic.app.lib.utils.AbstractBasePage;
 import com.livetraffic.app.lib.Constants;
-import com.livetraffic.app.page.locators.MapSYNQCreateNewAccountLocators;
 import com.livetraffic.app.page.locators.MapSYNQVerifyGeneralComponentsOfTrafficMapLocators;
-import com.livetraffic.app.stepdefinition.MapSYNQCreateNewAccountStep;
 import com.livetraffic.app.stepdefinition.MapSYNQVerifyGeneralComponentsOfTrafficMapStep;
 
 import org.junit.Assert;
-import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -50,10 +44,6 @@ public class MapSYNQVerifyGeneralComponentsOfTrafficMapPageObject extends Abstra
 		wait = new WebDriverWait(itsDriver, Constants.pageObjectWaitInSecs);
 		jsExecutor = (JavascriptExecutor) itsDriver;
 
-	}
-
-	public Properties testProps() {
-		return PropertiesLoader.getInstance().load("userdetails.properties");
 	}
 
 	public void verifyMapSYNQPageDisplayed() {

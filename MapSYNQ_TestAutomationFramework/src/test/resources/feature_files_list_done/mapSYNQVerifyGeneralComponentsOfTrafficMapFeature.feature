@@ -1,4 +1,4 @@
-Feature: Verification of All Map features
+Feature: Verification of General Components Map features
 
 Background: 
 	Given user navigates to application URL : "${map.url}" application 

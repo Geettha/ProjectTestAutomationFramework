@@ -1,19 +1,15 @@
 package com.livetraffic.app.page.functions;
 
 import java.util.Properties;
-import java.util.logging.Logger;
 
 import com.livetraffic.app.lib.helper.PropertiesLoader;
 import com.livetraffic.app.lib.utils.AbstractBasePage;
 import com.livetraffic.app.lib.Constants;
 import com.livetraffic.app.page.locators.MapSYNQCreateNewAccountLocators;
-import com.livetraffic.app.stepdefinition.MapSYNQCreateNewAccountStep;
 
 import org.junit.Assert;
-import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -31,7 +27,6 @@ public class MapSYNQCreateNewAccountPageObject extends AbstractBasePage {
 	final MapSYNQCreateNewAccountLocators registerLoc;
 	WebDriverWait wait;
 	JavascriptExecutor jsExecutor;
-	private final static Logger Log = Logger.getLogger(MapSYNQCreateNewAccountStep.class.getName());
 	private static final String FIRST_NAME_FIELD = "profile[first_name]";
 	private static final String LAST_NAME_FIELD = "profile[last_name]";
 	private static final String ADDRESS_FIELD = "profile[address]";

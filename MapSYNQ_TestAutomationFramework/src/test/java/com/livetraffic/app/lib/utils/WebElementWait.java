@@ -1,7 +1,6 @@
 package com.livetraffic.app.lib.utils;
 
 import java.util.concurrent.TimeUnit;
-import java.util.logging.Logger;
 
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
@@ -15,7 +14,6 @@ import com.livetraffic.app.lib.Constants;
 
 public abstract class WebElementWait
 {
-	private final static Logger	Log			= Logger.getLogger(WebElementWait.class.getName());
 	protected final WebDriver	itsDriver;
 	protected final WebDriverWait	itsWait;
 
