@@ -8,6 +8,7 @@ import org.junit.Assert;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -38,6 +39,7 @@ public class MapSYNQVerifyTrafficCamerasPageObject extends AbstractBasePage {
 	}
 	
 	public void verifySingaporeLiveTrafficCamerasShown() {
+		wait.until(ExpectedConditions.visibilityOf(cameraLoc.mpCameraInfoPanel));
 		Assert.assertTrue(cameraLoc.mpCameraInfoPanel.isDisplayed());
 	}
 	
@@ -47,11 +49,16 @@ public class MapSYNQVerifyTrafficCamerasPageObject extends AbstractBasePage {
 		cameraLoc.mpCameraLinkInfoPanel.click();
 	}
 	
+	public void verifyCameraInfoLinkShown() {
+		Assert.assertTrue(cameraLoc.mpCameraLinkInfoPanel.isDisplayed());
+	}
+	
 	public void verifyCameraPopShowOnMap() {
 		Assert.assertTrue(cameraLoc.mpCameraPopShown.isDisplayed());
 	}
 	
 	public void verifyCameraIconsDisplayedOnMap() {
+		wait.until(ExpectedConditions.visibilityOf(cameraLoc.mpCameraIconsLoaded));
 		Assert.assertTrue(cameraLoc.mpCameraIconsLoaded.isDisplayed());
 	}
 	
@@ -61,11 +68,16 @@ public class MapSYNQVerifyTrafficCamerasPageObject extends AbstractBasePage {
 	}
 	
 	public void enterSearchTextInfoPanel(String field) {
+		wait.until(ExpectedConditions.visibilityOf(cameraLoc.mpSearchTextCameraInfoPanel));
 		cameraLoc.mpSearchTextCameraInfoPanel.sendKeys(field);
 	}
 	
 	public void clickOnCameraIconLink() {
 		cameraLoc.mpCameraLinkInfoPanel.click();
+	}
+	
+	public void clickOnCameraIconBtnOnMap() {
+		cameraLoc.mpCameraBtn.click();
 	}
 }
 

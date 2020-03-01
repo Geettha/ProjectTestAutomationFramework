@@ -10,9 +10,9 @@ Scenario: Verification of Camera feature in Traffic Map App[TS_VerifyMapFeature_
 	Then I verify Galactio Ad info should not be displayed
 	Then I verify Map should be loaded on page with Incidents selected Default
 	Then I click on "Incidents" icon button on Map app
-	Then I click on "Cameras" icon button on Map app
+	When I click the "Cameras" icon button on Map app
 	Then I verify camera icons should be loaded in map
-	Then I click on "Cameras" icon image on Map app
+	Then I click on the "Cameras" icon image on Map app
 	Then I verify Camera Pop up should be displayed on Map 
 	Then I close browser
 	
@@ -25,9 +25,9 @@ Scenario: Verification of Camera button on the Info Panel[TS_VerifyMapFeature_Ca
 	Then I verify Galactio Ad info should not be displayed
 	Then I verify Map should be loaded on page with Incidents selected Default
 	Then I click on "Incidents" icon button on Map app
-	When I click on "Cameras" icon button on Info Panel
+	When I click on the "Cameras" icon button on Info Panel
 	Then I verify Singapore Live Traffic Cameras should be displayed
-	When I click on "CameraLinks" in Info Panel
+	When I click on "CameraLinks" link in Info Panel
 	Then I verify Camera Pop up should be displayed on Map   
 	Then I close browser
 	
@@ -37,11 +37,11 @@ Scenario: Verification of Search Camera feature in Info Panel[TS_VerifyMapFeatur
 	When I click on Ad Toggle icon
 	Then I verify Galactio Ad info should not be displayed
 	Then I verify Map should be loaded on page with Incidents selected Default
-	Then I click on "Cameras" icon button on Map app
+	When I click on the "Cameras" icon button on Info Panel
 	Then I verify Singapore Live Traffic Cameras should be displayed
-	When I enter "Adam Road" on Info Panel
+	When I enter "Adam Road" search textbox on Info Panel
 	Then I verify CameraLink should display by SearchText
-	When I click on "CameraLinks" in Info Panel
+	When I click on "CameraLinks" link in Info Panel
 	Then I verify Camera Pop up should be displayed on Map  
 	Then I close browser
 	

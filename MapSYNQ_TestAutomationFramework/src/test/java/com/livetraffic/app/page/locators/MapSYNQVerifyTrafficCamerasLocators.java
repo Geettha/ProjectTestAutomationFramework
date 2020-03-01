@@ -27,7 +27,7 @@ public class MapSYNQVerifyTrafficCamerasLocators {
 	@FindBy(xpath = "//*[local-name()='svg']//*[local-name()='g' and @id='OpenLayers.Layer.Vector_642_vroot']")
 	public WebElement mpCameraIconsLoaded;
 	
-	@FindBy(xpath = "//*[local-name()='svg']//*[local-name()='g' and @id='OpenLayers.Layer.Vector_642_vroot']//*[local-name()='image' and @id='OpenLayers.Geometry.Point_1018']")
+	@FindBy(xpath = "//*[local-name()='svg']//*[local-name()='g' and @id='OpenLayers.Layer.Vector_642_vroot']//*[local-name()='image' and @id='OpenLayers.Geometry.Point_1092']")
 	public WebElement mpClickOnCameraIcon;
 	
 	@FindBy(xpath = "//*[@id='popup_contentDiv']/div/b")
@@ -36,12 +36,15 @@ public class MapSYNQVerifyTrafficCamerasLocators {
 	@FindBy(xpath = "//*[@id='news_menu']/div/label[2]/span")
 	public WebElement mpCameraBtnInfoPanel;
 	
-	@FindBy(xpath = "//*[@id='singaporeIncidents']")
+	@FindBy(xpath = "//*[@id='news_menu']")
 	public WebElement mpCameraInfoPanel;
 	
 	@FindBy(xpath = "//*[@id='c6705']/a")
 	public WebElement mpCameraLinkInfoPanel;
 	
-	@FindBy(xpath = "//*[@id='txtSearchIncidentsingapore']")
+	@FindBy(xpath = "//*[@id='searchCamerasingapore']/input")
 	public WebElement mpSearchTextCameraInfoPanel;
+	
+	@FindBy(xpath = "//div[contains(@title,'Traffic Camera')][@class='cameraButtonItemInactive']")
+	public WebElement mpCameraBtn;
 }
