@@ -12,6 +12,7 @@ All dependencies added with Maven in pom.xml
 2) UI Automation
 Detailed and Clean Reporting
 For Reporting used Extent Reporting API.
+com.livetraffic.app.tests;
 
 3) Test can be run via command line
 Yes can be run via command line using mvn command
@@ -21,18 +22,20 @@ mvn -DTest=MasterTest test
 Use of env variables implemented
 
 5) Can be configured to to run against various browsers and OS combination 
-Added classes com.livetraffic.app.lib.OperatingSystem.java; 
+com.livetraffic.app.lib.OperatingSystem.java; 
 com.livetraffic.app.lib.WebDriverFactory.java;
 
 
 6) Test run headlessly
+Have to remove the comments in the file com.livetraffic.app.lib.WebDriverFactory class
 options.addArguments("--headless", "--disable-gpu", "--window-size=1920,1200","--ignore-certificate-errors");
 
-7) mobile browser supprot
-Yes Appium Driver implemented.
+7) mobile browser support WebDriver
+Code added in the om.livetraffic.app.lib.WebDriverFactory class
 
 8) Capture screenshot in failure
 Implemented with Extent Reports with Hooks.java @After Method
+com.livetraffic.app.stepdefinition
 
 9) Clean commit history
 Please help verify GIT Hub url
@@ -42,9 +45,17 @@ Can be implemented in 2 ways
 -> Using Cucumber JVM Parallel plugin
 -> Using SureFire Plugin
 {Used below option. Implemented **/*TR.java runner classes for 2 feature files for parallel run}
+com.livetraffic.app.tests;
 
 11) Containerize
 Not implemented [Due to Time Constraint]
+
+12) Dependency Injections implemented using @Autowired
+<dependency>
+	<groupId>org.springframework</groupId>
+	<artifactId>spring-beans</artifactId>
+	<version>3.0.5.RELEASE</version>
+</dependency>
 
 
 
@@ -67,7 +78,7 @@ Not implemented [Due to Time Constraint]
   2. Install Maven plugin in ecplise if it is not present
   3. Use git clone to download the automation framework to your local system , GIT URL 
 	
-	https://github.com/Geettha/SDET-Project.git
+	url: https://github.com/Geettha/ProjectTestAutomationFramework.git
 	
 	Note : Develop branch is the automation stable code
 
