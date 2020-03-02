@@ -29,7 +29,7 @@ com.livetraffic.app.lib.WebDriverFactory.java;
 options.addArguments("--headless", "--disable-gpu", "--window-size=1920,1200","--ignore-certificate-errors");
 
 7) mobile browser supprot
-Yes Appium Driver implemented.
+Code for Mobile Automation Configuration Added but not unit tested due to time constraints.
 
 8) Capture screenshot in failure
 Implemented with Extent Reports with Hooks.java @After Method
@@ -67,7 +67,7 @@ Not implemented [Due to Time Constraint]
   2. Install Maven plugin in ecplise if it is not present
   3. Use git clone to download the automation framework to your local system , GIT URL 
 	
-	https://github.com/Geettha/SDET-Project.git
+	https://github.com/Geettha/ProjectTestAutomationFramework.git
 	
 	Note : Develop branch is the automation stable code
 
