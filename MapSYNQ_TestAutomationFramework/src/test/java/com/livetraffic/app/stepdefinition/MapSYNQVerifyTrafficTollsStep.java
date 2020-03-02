@@ -2,7 +2,6 @@ package com.livetraffic.app.stepdefinition;
 
 import com.livetraffic.app.lib.helper.ScumberException;
 import com.livetraffic.app.lib.WebDriverActions;
-import com.livetraffic.app.page.functions.MapSYNQVerifyTrafficSpeedPageObject;
 import com.livetraffic.app.page.functions.MapSYNQVerifyTrafficTollsPageObject;
 
 import cucumber.api.Scenario;

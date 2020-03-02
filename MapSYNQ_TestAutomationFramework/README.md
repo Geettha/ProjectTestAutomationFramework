@@ -12,7 +12,6 @@ All dependencies added with Maven in pom.xml
 2) UI Automation
 Detailed and Clean Reporting
 For Reporting used Extent Reporting API.
-com.livetraffic.app.tests;
 
 3) Test can be run via command line
 Yes can be run via command line using mvn command
@@ -22,20 +21,18 @@ mvn -DTest=MasterTest test
 Use of env variables implemented
 
 5) Can be configured to to run against various browsers and OS combination 
-com.livetraffic.app.lib.OperatingSystem.java; 
+Added classes com.livetraffic.app.lib.OperatingSystem.java; 
 com.livetraffic.app.lib.WebDriverFactory.java;
 
 
 6) Test run headlessly
-Have to remove the comments in the file com.livetraffic.app.lib.WebDriverFactory class
 options.addArguments("--headless", "--disable-gpu", "--window-size=1920,1200","--ignore-certificate-errors");
 
-7) mobile browser support WebDriver
-Code added in the om.livetraffic.app.lib.WebDriverFactory class
+7) mobile browser supprot
+Yes Appium Driver implemented.
 
 8) Capture screenshot in failure
 Implemented with Extent Reports with Hooks.java @After Method
-com.livetraffic.app.stepdefinition
 
 9) Clean commit history
 Please help verify GIT Hub url
@@ -45,17 +42,9 @@ Can be implemented in 2 ways
 -> Using Cucumber JVM Parallel plugin
 -> Using SureFire Plugin
 {Used below option. Implemented **/*TR.java runner classes for 2 feature files for parallel run}
-com.livetraffic.app.tests;
 
 11) Containerize
 Not implemented [Due to Time Constraint]
-
-12) Dependency Injections implemented using @Autowired
-<dependency>
-	<groupId>org.springframework</groupId>
-	<artifactId>spring-beans</artifactId>
-	<version>3.0.5.RELEASE</version>
-</dependency>
 
 
 
@@ -78,7 +67,7 @@ Not implemented [Due to Time Constraint]
   2. Install Maven plugin in ecplise if it is not present
   3. Use git clone to download the automation framework to your local system , GIT URL 
 	
-	url: https://github.com/Geettha/ProjectTestAutomationFramework.git
+	https://github.com/Geettha/SDET-Project.git
 	
 	Note : Develop branch is the automation stable code
 
@@ -90,9 +79,14 @@ Not implemented [Due to Time Constraint]
 
   6. Check whether the build is successful
   7. Now , locate the Test file you want to execute.
-   Basically each test file has one or more tag such as @RegressionSuite. When we run one of these test file all the features/scenarios belonging to that tag/s runs. 
+   Basically each test file has one or more tag such as @TestSuite. When we run one of these test file all the features/scenarios belonging to that tag/s runs. 
   
-  mvn -DTest=MasterTest test
+  For run both scenarios or more
+  mvn -Dcucumber.options="--tags @Testsuite --tags @Suite"
+
+  For run either scenarios
+  mvn -Dcucumber.options="--tags @Testsuite,@Suite"
+  
   
   This step would launch the browser and launch the application and runs the scenarios written in <modulename>.feature files under resources/feature_files/ path.
 
@@ -102,3 +96,12 @@ Not implemented [Due to Time Constraint]
   mvn -DTest=MasterTest test
   
   This is basically going to run all Feature Files available at path src/test/resources/feature_files irrespective of their actual tag used. 
+
+#Features automated
+1) Registration Features( # of scenarios 1)
+2) General Components of Traffic Map (# of scenarios 1)
+3) Camera Feature (# of scenarios 3)
+4) Incident Features(# of scenarios 3)
+5) Parking Feature (# of scenario 1)
+6) Speed Feature (#of scenario 1)
+7) Toll Features (#of scenarios 3)

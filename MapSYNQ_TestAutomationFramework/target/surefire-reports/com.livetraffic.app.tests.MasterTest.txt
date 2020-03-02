@@ -1,21 +1,21 @@
 -------------------------------------------------------------------------------
 Test set: com.livetraffic.app.tests.MasterTest
 -------------------------------------------------------------------------------
-Tests run: 128, Failures: 0, Errors: 4, Skipped: 28, Time elapsed: 220.034 sec <<< FAILURE!
-Then I verify new mapSYNQ account successfully created(| Tim | Lan | Singapore | PA 123 | 89089011 | 27-08-2010 | giitanjalim@gmail.com | test1239 | test1239 |)  Time elapsed: 0.02 sec  <<< ERROR!
+Tests run: 209, Failures: 0, Errors: 4, Skipped: 7, Time elapsed: 488.558 sec <<< FAILURE!
+Then I verify new mapSYNQ account successfully created(| Tim | Lan | Singapore | PA 123 | 89089011 | 27-08-2010 | giitanjalim@gmail.com | test1239 | test1239 |)  Time elapsed: 0.015 sec  <<< ERROR!
 org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='div_header']/div/div/a[contains(text(),'Register')]"}
   (Session info: chrome=80.0.3987.122)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-FBHI1RA', ip: '192.168.1.87', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_141'
+System info: host: 'DESKTOP-FBHI1RA', ip: '192.168.1.87', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_05'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\ASUS\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54686}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: dec602b7b4d312efcf7c5a84772ec916
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\ASUS\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:65005}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 66d3810a2545c784e2d7d1ceff8162e0
 *** Element info: {Using=xpath, value=//*[@id='div_header']/div/div/a[contains(text(),'Register')]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -29,24 +29,24 @@ Session ID: dec602b7b4d312efcf7c5a84772ec916
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy20.click(Unknown Source)
-	at com.livetraffic.app.page.functions.MapSYNQCreateNewAccountPageObject.newUserCreation(MapSYNQCreateNewAccountPageObject.java:140)
+	at com.livetraffic.app.page.functions.MapSYNQCreateNewAccountPageObject.newUserCreation(MapSYNQCreateNewAccountPageObject.java:135)
 	at com.livetraffic.app.stepdefinition.MapSYNQCreateNewAccountStep.iVerifyNewMapSYNQAccountSuccessfullyCreated(MapSYNQCreateNewAccountStep.java:67)
 	at ?.Then I verify new mapSYNQ account successfully created(feature_files_list/mapSYNQCreateNewAccount.feature:23)
 
-| Tim | Lan | Singapore | PA 123 | 89089011 | 27-08-2010 | giitanjalim@gmail.com | test1239 | test1239 |  Time elapsed: 0.021 sec  <<< ERROR!
+| Tim | Lan | Singapore | PA 123 | 89089011 | 27-08-2010 | giitanjalim@gmail.com | test1239 | test1239 |  Time elapsed: 0.015 sec  <<< ERROR!
 org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='div_header']/div/div/a[contains(text(),'Register')]"}
   (Session info: chrome=80.0.3987.122)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-FBHI1RA', ip: '192.168.1.87', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_141'
+System info: host: 'DESKTOP-FBHI1RA', ip: '192.168.1.87', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_05'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\ASUS\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54686}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: dec602b7b4d312efcf7c5a84772ec916
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\ASUS\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:65005}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 66d3810a2545c784e2d7d1ceff8162e0
 *** Element info: {Using=xpath, value=//*[@id='div_header']/div/div/a[contains(text(),'Register')]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -60,65 +60,33 @@ Session ID: dec602b7b4d312efcf7c5a84772ec916
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy20.click(Unknown Source)
-	at com.livetraffic.app.page.functions.MapSYNQCreateNewAccountPageObject.newUserCreation(MapSYNQCreateNewAccountPageObject.java:140)
+	at com.livetraffic.app.page.functions.MapSYNQCreateNewAccountPageObject.newUserCreation(MapSYNQCreateNewAccountPageObject.java:135)
 	at com.livetraffic.app.stepdefinition.MapSYNQCreateNewAccountStep.iVerifyNewMapSYNQAccountSuccessfullyCreated(MapSYNQCreateNewAccountStep.java:67)
 	at ?.Then I verify new mapSYNQ account successfully created(feature_files_list/mapSYNQCreateNewAccount.feature:23)
 
-When I click on Ad Toggle icon(Scenario: Verification of Traffic Map feature [TS_VerifyMapFeature_Traffic_1.1])  Time elapsed: 0 sec  <<< ERROR!
-org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <div id="ad_toggle" class="sprite ad_bar_toggle ad_bar_collapse"></div> is not clickable at point (1228, 167). Other element would receive the click: <div id="galactio_ad" class="sprite" style="right: 0px;">...</div>
-  (Session info: chrome=80.0.3987.122)
+When I click on the "ParkingSlots" icon button on Map app(Scenario: Verification of Traffic Parking Map Feature[TS_VerifyMapFeature_TrafficParkingMap_1.1])  Time elapsed: 0 sec  <<< ERROR!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (347417b9c52338de9c5bd0f3eb67e017)] -> xpath: //*[local-name()='svg']//*[local-name()='g' and @id='OpenLayers.Layer.Vector_666_vroot']//*[local-name()='image' and @id='OpenLayers.Geometry.Point_728']] (tried for 150 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-FBHI1RA', ip: '192.168.1.87', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_141'
+System info: host: 'DESKTOP-FBHI1RA', ip: '192.168.1.87', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_05'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\ASUS\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:55127}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: c6eccf9c6e826e749c5f6eec0143b913
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at sun.reflect.GeneratedMethodAccessor18.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy20.click(Unknown Source)
-	at com.livetraffic.app.page.functions.MapSYNQVerifyGeneralComponentsOfTrafficMapPageObject.clickOnAdToggleButton(MapSYNQVerifyGeneralComponentsOfTrafficMapPageObject.java:75)
-	at com.livetraffic.app.stepdefinition.MapSYNQVerifyGeneralComponentsOfTrafficMapStep.i_click_on_Ad_Toggle_icon(MapSYNQVerifyGeneralComponentsOfTrafficMapStep.java:52)
-	at ?.When I click on Ad Toggle icon(feature_files_list/mapSYNQVerifyTrafficSpeed.feature:9)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\ASUS\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:49217}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 347417b9c52338de9c5bd0f3eb67e017
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.livetraffic.app.page.functions.MapSYNQVerifyTrafficParkingPageObject.clickIconsParking(MapSYNQVerifyTrafficParkingPageObject.java:72)
+	at com.livetraffic.app.stepdefinition.MapSYNQVerifyTrafficParkingStep.i_click_on_the_icon_button_on_Map_app(MapSYNQVerifyTrafficParkingStep.java:57)
+	at ?.When I click on the "ParkingSlots" icon button on Map app(feature_files_list/mapSYNQVerifyTrafficParking_6.feature:15)
 
-Scenario: Verification of Traffic Map feature [TS_VerifyMapFeature_Traffic_1.1]  Time elapsed: 0 sec  <<< ERROR!
-org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <div id="ad_toggle" class="sprite ad_bar_toggle ad_bar_collapse"></div> is not clickable at point (1228, 167). Other element would receive the click: <div id="galactio_ad" class="sprite" style="right: 0px;">...</div>
-  (Session info: chrome=80.0.3987.122)
+Scenario: Verification of Traffic Parking Map Feature[TS_VerifyMapFeature_TrafficParkingMap_1.1]  Time elapsed: 0 sec  <<< ERROR!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (347417b9c52338de9c5bd0f3eb67e017)] -> xpath: //*[local-name()='svg']//*[local-name()='g' and @id='OpenLayers.Layer.Vector_666_vroot']//*[local-name()='image' and @id='OpenLayers.Geometry.Point_728']] (tried for 150 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-FBHI1RA', ip: '192.168.1.87', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_141'
+System info: host: 'DESKTOP-FBHI1RA', ip: '192.168.1.87', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_05'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\ASUS\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:55127}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: c6eccf9c6e826e749c5f6eec0143b913
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at sun.reflect.GeneratedMethodAccessor18.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy20.click(Unknown Source)
-	at com.livetraffic.app.page.functions.MapSYNQVerifyGeneralComponentsOfTrafficMapPageObject.clickOnAdToggleButton(MapSYNQVerifyGeneralComponentsOfTrafficMapPageObject.java:75)
-	at com.livetraffic.app.stepdefinition.MapSYNQVerifyGeneralComponentsOfTrafficMapStep.i_click_on_Ad_Toggle_icon(MapSYNQVerifyGeneralComponentsOfTrafficMapStep.java:52)
-	at ?.When I click on Ad Toggle icon(feature_files_list/mapSYNQVerifyTrafficSpeed.feature:9)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\ASUS\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:49217}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 347417b9c52338de9c5bd0f3eb67e017
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.livetraffic.app.page.functions.MapSYNQVerifyTrafficParkingPageObject.clickIconsParking(MapSYNQVerifyTrafficParkingPageObject.java:72)
+	at com.livetraffic.app.stepdefinition.MapSYNQVerifyTrafficParkingStep.i_click_on_the_icon_button_on_Map_app(MapSYNQVerifyTrafficParkingStep.java:57)
+	at ?.When I click on the "ParkingSlots" icon button on Map app(feature_files_list/mapSYNQVerifyTrafficParking_6.feature:15)
 
